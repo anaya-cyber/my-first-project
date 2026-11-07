@@ -1,45 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIYAAA AURELLE | Luxury Fashion</title>
 
-    <style>
-        body {
-            background-color: #f3e8ff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 60px;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        h1 {
-            color: #7c3aed;
-        }
+    body {
+      background: #f8f5ef;
+      color: #222;
+      font-family: Georgia, serif;
+    }
 
-        p {
-            color: #444;
-            font-size: 18px;
-        }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #ddd5c8;
+    }
 
-        button {
-            background-color: #7c3aed;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    </style>
+    .logo {
+      font-size: 22px;
+      letter-spacing: 5px;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero p {
+      letter-spacing: 5px;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      font-weight: normal;
+      letter-spacing: 8px;
+      margin-bottom: 25px;
+    }
+
+    .hero h2 {
+      font-size: 18px;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 35px;
+    }
+
+    button {
+      background: #222;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .collection {
+      text-align: center;
+      padding: 50px 8%;
+    }
+
+    .collection h2 {
+      font-size: 30px;
+      font-weight: normal;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    .collection p {
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .fashion-image {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      margin-top: 50px;
+      border-top: 1px solid #ddd5c8;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Welcome to My First Website!</h1>
 
-    <p>Hello! I am learning how to create websites.</p>
+  <header>
+    <div class="logo">NIYAAA AURELLE</div>
 
-    <p>This is my very first project on GitHub.</p>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#collection">COLLECTION</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </header>
 
-    <button onclick="alert('You just made your first website!')">
-        Click Me
+  <section class="hero" id="home">
+    <p>THE ART OF ELEGANCE</p>
+
+    <h1>NIYAAA AURELLE</h1>
+
+    <h2>Elegance in every detail.</h2>
+
+    <button onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">
+      EXPLORE COLLECTION
     </button>
+  </section>
+
+  <section class="collection" id="collection">
+    <h2>THE COLLECTION</h2>
+
+    <p>Timeless pieces. Modern elegance.</p>
+
+    <img
+      class="fashion-image"
+      src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80"
+      alt="Luxury fashion editorial"
+    >
+  </section>
+
+  <section class="collection" id="about">
+    <h2>OUR PHILOSOPHY</h2>
+
+    <p>
+      NIYAAA AURELLE celebrates timeless beauty,
+      thoughtful design, and effortless elegance.
+    </p>
+  </section>
+
+  <footer>
+    NIYAAA AURELLE © 2026
+  </footer>
+
 </body>
 </html>
